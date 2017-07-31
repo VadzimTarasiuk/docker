@@ -43,6 +43,6 @@ Task Report Notes
 2. With ```docker-compose```:
    - Create ```docker-compose.yml``` file [docker-compose.yml](resources/docker-compose.yml) to build containers from previos task
    - Run "environment" in daemon mode
-```
+
 <img src="resources/img/2-1.png">
 <img src="resources/img/2-2.png">
