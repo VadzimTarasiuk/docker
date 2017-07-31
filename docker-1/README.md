@@ -39,3 +39,10 @@ Task Report Notes
 * ```Nginx``` container forwards http requests to ```Tomcat``` container; Only ```nginx``` container exposes port (80)
 <img src="resources/img/1-1.png">
 <img src="resources/img/1-7.png">
+
+2. With ```docker-compose```:
+   - Create ```docker-compose.yml``` file [docker-compose.yml](resources/docker-compose.yml) to build containers from previos task
+   - Run "environment" in daemon mode
+```
+<img src="resources/img/2-1.png">
+<img src="resources/img/2-2.png">
