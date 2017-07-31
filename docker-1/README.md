@@ -27,15 +27,15 @@ Task Report Notes
 1. Wiht ```Dockerfiles```:
 
  * Create Docker Image of ```nginx``` ([web.Dockerfile](resources/web/web.Dockerfile))
-<img src="resources/img/1-3.PNG">
+<img src="resources/img/1-3.png">
 
  * Create Docker Image of ```Tomcat 7``` ([tomcat.Dockerfile](resources/tomcat/tomcat.Dockerfile))
-<img src="resources/img/1-2.PNG">
+<img src="resources/img/1-2.png">
 
  * Create Docker Image (Data Volume) with [```hello world```](https://tomcat.apache.org/tomcat-7.0-doc/appdev/sample/sample.war) application for Tomcat ([application.Dockerfile](resources/datavolume/application.Dockerfile))
-<img src="resources/img/1-6.PNG">
+<img src="resources/img/1-6.png">
 
 * Run these Images so that [http://localhost/sample](http://localhost/sample) shows ```hello world``` page
 * ```Nginx``` container forwards http requests to ```Tomcat``` container; Only ```nginx``` container exposes port (80)
-<img src="resources/img/1-1.PNG">
-<img src="resources/img/1-7.PNG">
+<img src="resources/img/1-1.png">
+<img src="resources/img/1-7.png">
