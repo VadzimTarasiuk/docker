@@ -10,7 +10,7 @@
 
 <img src="1-3.png">
 
-***5. Test ansible connectivity to the VM with ad-hoc command: ***
+***5. Test ansible connectivity to the VM with ad-hoc command:***
 ```$ ansible VM-name -i inventory -m setup```
 ```Find out host details:```
 * Number of CPUs
