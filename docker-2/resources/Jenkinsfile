@@ -16,11 +16,11 @@ node('host') {
         sh 'wget -N -P spring/ https://raw.githubusercontent.com/VadzimTarasiuk/docker/vadzim_tarasiuk_day2/docker-2/resources/spring/spring.Dockerfile'
     }
     stage('Run application') {
-	sh 'tree'
+	
         sh 'docker-compose up -d' 
     }
     stage('Check app running') {
-        sh 'sleep 10'
+        
         sh 'curl -IL http://127.0.0.1:8081' 
     }
     stage('Clean up') {
