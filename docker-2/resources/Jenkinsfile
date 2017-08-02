@@ -20,7 +20,7 @@ node('host') {
         sh 'docker-compose up -d' 
     }
     stage('Check if Spring is deployed and accessible') {
-        sh 'slepp 5s'
+        sh 'sleep 5s'
         sh 'curl -IL http://127.0.0.1:8081' 
     }
     stage('Clean up containers') {
