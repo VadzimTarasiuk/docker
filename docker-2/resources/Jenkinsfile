@@ -16,8 +16,7 @@ node('host') {
         sh 'wget -N -P spring/ https://raw.githubusercontent.com/VadzimTarasiuk/docker/vadzim_tarasiuk_day2/docker-2/resources/spring/spring.Dockerfile'
     }
     stage('Run application container') {
-	sh 'cd .. && tree && cd -'
-	sh 'tree'
+	sh 'cd /var/ && tree -C && cd -'
         sh 'docker-compose up -d' 
     }
     stage('Check if Spring is deployed and accessible') {
