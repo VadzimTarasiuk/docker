@@ -20,8 +20,8 @@ node('host') {
         sh 'docker-compose up -d' 
     }
     stage('Check app running') {
-        sh 'sleep 5'
-        sh 'curl http://127.0.0.1:8081' 
+        sh 'sleep 10'
+        sh 'curl -IL http://127.0.0.1:8081' 
     }
     stage('Clean up') {
         sh 'docker-compose stop && docker-compose rm -f'
