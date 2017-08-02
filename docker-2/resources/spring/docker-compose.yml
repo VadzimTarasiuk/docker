@@ -6,5 +6,5 @@ services:
       dockerfile: spring.Dockerfile
     ports: [ "127.0.0.1:8081:8080" ]
     volumes:
-      - /var/jenkins_home/workspace/Build spring/initial/build/libs:/spring
+      - /var/jenkins_home/workspace/Docker-day2/initial/build/libs:/spring
 
