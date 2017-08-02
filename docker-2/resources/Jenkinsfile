@@ -12,8 +12,8 @@ node('host') {
     }
     stage('Prepare environment to run app') {
         sh 'mkdir spring'
-        sh 'wget -N https://raw.githubusercontent.com/VadzimTarasiuk/docker/vadzim_tarasiuk_day2/docker-2/resources/spring/docker-compose.yml'
-        sh 'wget -N -P spring/ https://raw.githubusercontent.com/VadzimTarasiuk/docker/vadzim_tarasiuk_day2/docker-2/resources/spring/spring.Dockerfile'
+        sh 'wget -N  https://raw.githubusercontent.com/VadzimTarasiuk/docker/vadzim_tarasiuk_day2/docker-2/resources/spring/docker-compose.yml'
+        sh 'wget -N  https://raw.githubusercontent.com/VadzimTarasiuk/docker/vadzim_tarasiuk_day2/docker-2/resources/spring/spring.Dockerfile'
     }
     stage('Run application') {
 	sh 'tree'
