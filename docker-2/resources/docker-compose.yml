@@ -5,5 +5,5 @@ services:
   expose: [ "8080", "22" ]
   ports: [ "127.0.0.1:8080:8080" ]
   volumes:
-    - /home/student/workspace/jenkins_home:/var/jenkins_home:rw
+    - /home/student/workspace/jenkins_home:/var/jenkins:rw
 
